@@ -1,0 +1,12 @@
+artifacts_root: artifacts
+#creates an artifacts folder
+
+data_ingestion:
+#inside the data ingestion , the subfolders are defined
+  root_dir: artifacts/data_ingestion
+  #inside the folder it will download the data set
+  source_URL: https://github.com/entbappy/Branching-tutorial/raw/master/summarizer-data.zip
+  #inside data ingestion it will download the data as data.zip
+  local_data_file: artifacts/data_ingestion/data.zip
+  #after unzipping it will be in the data ingestion
+  unzip_dir: artifacts/data_ingestion
