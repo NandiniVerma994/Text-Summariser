@@ -10,3 +10,10 @@ data_ingestion:
   local_data_file: artifacts/data_ingestion/data.zip
   #after unzipping it will be in the data ingestion
   unzip_dir: artifacts/data_ingestion
+
+#it will create a new folder in the artifacts and check if the data is in the correct format like train test and 
+#validation files present . if it is then it returns status.txt as true else false
+data_validation:
+  root_dir: artifacts/data_validation
+  STATUS_FILE: artifacts/data_validation/status.txt
+  ALL_REQUIRED_FILES: ["train", "test", "validation"]
